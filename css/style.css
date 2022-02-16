@@ -1,0 +1,142 @@
+/* Default */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+body {
+  box-sizing: border-box;
+  line-height: 1.6;
+  color: #000 !important;
+}
+p,
+a,
+h1, h2, h3, h4, h5, h6,
+input,
+select,
+button,
+textarea {
+  text-decoration: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+ul {
+  list-style: none !important;
+}
+img {
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+/* Header Start */
+.header {
+  height: 93vh;
+  background-image: linear-gradient(to bottom, rgb(0 0 0 / 80%), rgb(58 58 58 / 80%)), url('/images/caffe-bar-and-restaurant-trg-hero.jpg');
+  background-size: cover;
+  background-position: bottom;
+}
+/* Header End */
+
+/* Navigation Start */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  padding: 20px 100px;
+  background-color: transparent;
+  box-shadow: none;
+}
+.navbar-brand {
+  padding: 0;
+  margin: 0;
+  color: #fff !important;
+  font-size: 40px !important;
+  font-style: italic;
+  line-height: 1;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+.nav-item {
+  margin-left: 20px;
+}
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #fff !important;
+  line-height: 1;
+}
+.nav-link img {
+  width: 16px;
+  height: 16px;
+}
+/* Navigation End */
+
+/* Hero Start */
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 460px;
+}
+.hero-title {
+  font-size: 70px;
+  text-transform: uppercase;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  line-height: 1;
+}
+.hero-subtitle {
+  color: #fff;
+  font-size: 25px;
+  line-height: 1;
+  text-align: center;
+}
+.hero-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-social-icon {
+
+}
+.hero-social-icon img {
+  width: 30px;
+  height: 30px;
+}
+/* Hero End */
+
+/* Footer Start */
+.footer {
+  height: 7vh;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #262525;
+}
+.footer > h6, 
+.footer > p {
+  padding: 0;
+  margin: 0;
+  color: #fff !important;
+}
+/* Footer End */
+
+@media (min-width: 1100px) {
+  .container.narrow {
+    max-width: 1000px !important;
+  }
+}
